@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Birthday, Kate</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500&family=Caveat:wght@500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="court-lines" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <rect x="60" y="60" width="1080" height="680" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="60" y1="400" x2="1140" y2="400" stroke="currentColor" stroke-width="2"/>
+      <line x1="600" y1="60" x2="600" y2="740" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 10"/>
+      <rect x="190" y="60" width="820" height="680" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+
+    <div class="wrap hero-inner">
+      <p class="eyebrow">For Kate &mdash; happy birthday</p>
+      <h1 class="headline">Happy birthday,<br>Kate.</h1>
+
+      <div class="note">
+        <p>
+          Another year of you raising my game &mdash; on the court and off it. I love that
+          we get to chase the same silly little yellow ball together, and I love everything
+          else even more. This year I got you something I think you're going to love.
+        </p>
+        <p>
+          Only catch: it's still on its way to us. So here's a sneak peek while we wait.
+        </p>
+        <p class="sign">&mdash; Scott</p>
+      </div>
+
+      <a class="scroll-cue" href="#reveal" aria-label="Scroll to see the surprise">
+        <span>see the surprise</span>
+        <svg width="14" height="22" viewBox="0 0 14 22" fill="none" aria-hidden="true">
+          <path d="M7 1V21M7 21L1 15M7 21L13 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <svg class="serve-path" viewBox="0 0 1200 900" preserveAspectRatio="none" aria-hidden="true">
+      <path id="servePath" d="M 140 120 C 420 260, 760 460, 1080 820" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="1 14" stroke-linecap="round"/>
+      <circle r="7" class="ball-dot">
+        <animateMotion dur="7s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#servePath"/>
+        </animateMotion>
+      </circle>
+    </svg>
+  </section>
+
+  <!-- REVEAL -->
+  <section id="reveal" class="reveal">
+    <div class="wrap">
+      <p class="eyebrow">Serving up a surprise</p>
+      <h2 class="headline headline-md">Your gift is on its way.</h2>
+      <p class="lede">
+        I ordered you the <strong>PongBot&nbsp;Aura</strong> &mdash; an AI training robot built
+        for tennis (it also does pickleball and padel, in case you're feeling adventurous).
+        It reads your shots, feeds you drills, and basically gives you a coach who never
+        gets tired of feeding balls. It doesn't land on our doorstep until July, but I didn't
+        want to make you wait that long to see it.
+      </p>
+
+      <figure class="product-card">
+        <img
+          src="https://the-gadgeteer.com/wp-content/uploads/2026/05/PongBot-Aura-AI-Ball-Machine-E.jpg"
+          alt="PongBot Aura AI training robot for tennis, pickleball, and padel"
+          loading="lazy"
+        />
+        <figcaption class="spec-strip">7&nbsp;KG &nbsp;&middot;&nbsp; 5&nbsp;HR RUNTIME &nbsp;&middot;&nbsp; AI COACHING &nbsp;&middot;&nbsp; ARRIVING JULY 2026</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-section">
+    <div class="wrap">
+      <p class="eyebrow">Watch it in action</p>
+      <h2 class="headline headline-md">See Aura on the court.</h2>
+      <div class="video-frame">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          poster="https://the-gadgeteer.com/wp-content/uploads/2026/05/PongBot-Aura-AI-Ball-Machine-E.jpg"
+        >
+          <source src="https://v2.kickstarter.com/1781887868-lhc31NHPwjl5xugkVkczFLzJi9b11CaX7WZ%2FHIQ11jg%3D/projects/5307605/video-1432380-h264_high.mp4" type="video/mp4" />
+          Your browser doesn't support embedded video &mdash; here's the
+          <a href="https://www.kickstarter.com/projects/pongbot/aura-the-worlds-first-ultra-light-ai-multi-sport-robot">Kickstarter page</a> instead.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made for Kate. Happy birthday <span class="ball-emoji">🎾</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
